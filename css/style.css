@@ -411,6 +411,7 @@ template {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
@@ -510,6 +511,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -547,7 +551,7 @@ template {
 
 @media (max-width: 576px) {
   .logo {
-    width: 99px;
+    width: 110px;
   }
 }
 /*# sourceMappingURL=style.css.map */
