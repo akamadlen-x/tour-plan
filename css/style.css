@@ -539,12 +539,6 @@ template {
 }
 
 @media (max-width: 768px) {
-  body {
-    background-color: green;
-  }
-  .logo {
-    width: 120px;
-  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -579,8 +573,8 @@ template {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -609,9 +603,9 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .logo {
-    width: 110px;
+    width: 100px;
   }
 }
 
