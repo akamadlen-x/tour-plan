@@ -8,6 +8,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 const swiperKeyboard = new Swiper(".swiper", {
+  loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: false,
