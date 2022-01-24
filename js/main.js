@@ -7,10 +7,9 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".slider-button--prev",
   },
 });
-
-document.addEventListener("keydown", function (e) {
-  e.preventDefault();
-  if (event.key == "ArrowRight") {
-    console.log(event.key);
-  }
+const swiperKeyboard = new Swiper(".swiper", {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
