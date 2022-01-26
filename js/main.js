@@ -1,4 +1,13 @@
-const swiper = new Swiper(".swiper", {
+const swiperAuto = new Swiper(".swiper", {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    reverseDirection: true,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+});
+const swiperMouse = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
   // Navigation arrows
