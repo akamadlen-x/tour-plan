@@ -967,7 +967,7 @@ img {
   background-size: 10px;
   background-position: center;
   border: none;
-  background-color: transporent;
+  background-color: transparent;
   cursor: pointer;
   z-index: 100;
 }
@@ -1198,7 +1198,10 @@ img {
   .map {
     width: 340px;
   }
-  .map-slide img {
+  .map iframe {
+    width: 100%;
+  }
+  .map iframe-slide img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1302,6 +1305,9 @@ img {
     width: 100%;
   }
   .map {
+    width: 100%;
+  }
+  .map iframe {
     width: 100%;
   }
   .newsletter-wrapper {
