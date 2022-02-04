@@ -112,17 +112,20 @@
       justify-content: space-between
       &__text
         padding-right: 0 
-
-
-
+    &__bottom-text
+      grid-column: 2 / 6     
 
 @media (max-width: 767px)
 
   .container
     max-width: 576px
     width: 92%
+
   body
     padding-top: 78px  
+    overflow-x: hidden
+    overflow-y: scroll
+    white-space: nowrap  
   .navbar
     &--mobile
       &_fixed
@@ -307,7 +310,8 @@
         grid-column: 1
       &-form
         grid-row: 7
-        grid-column: 1       
+        grid-column: 1   
+        margin-bottom: 15px    
     &__additional    
       grid-row: 3
       grid-column: 1
@@ -327,12 +331,15 @@
     &__info
       flex-basis: 100%
       margin-bottom: 15px
-    &-bottom
-      flex-wrap: wrap
-      justify-content: start
-      margin: 0
-      &__text
-        padding: 40px 0 15px 0   
+    &__bottom-text
+      grid-row: 8
+      grid-column: 1 
+    &__policy  
+      flex-basis: 100% 
+    &__bottom-img
+      justify-content: flex-start
+
+
       
       
         

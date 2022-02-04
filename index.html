@@ -114,7 +114,7 @@
               Stays Free
             </p>
           </div>
-          <div class="rating hotel-info__rating">
+          <div data-toggle="modal" class="rating hotel-info__rating">
             <span class="rating__text">User rating</span>
             <span class="rating__counter">4.5/</span
             ><span class="rating__fraction">5</span>
@@ -211,7 +211,9 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -401,11 +403,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo:BestTourPlan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__logo"
+            ><img
+              src="img/vertical-logo.svg"
+              alt="Logo:BestTourPlan"
+              class="logo footer__logo"
+          /></a>
+
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -550,7 +554,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -558,15 +562,48 @@
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <span class="footer-bottom__text"
-            >Disclaimer Conditions of use Cancellation policy</span
-          >
-          <img src="img/bottom-img.png" alt="" class="footer-bottom__img" />
+          <div class="footer__bottom-text">
+            <span class="footer__policy">
+              Disclaimer Conditions of use Cancellation policy
+            </span>
+          </div>
+          <div class="footer__bottom-img">
+            <img src="img/bottom-img.png" alt="" class="footer__img5" />
+          </div>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"
+          ><img src="img/close.svg" alt="icon: close"
+        /></a>
+        <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+        <form action="send.php" method="post" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
