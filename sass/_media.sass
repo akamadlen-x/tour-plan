@@ -123,9 +123,7 @@
 
   body
     padding-top: 78px  
-    overflow-x: hidden
-    overflow-y: scroll
-    white-space: nowrap  
+ 
   .navbar
     &--mobile
       &_fixed
@@ -136,6 +134,7 @@
         right: 0
         bottom: 0
         z-index: 100
+
     &__user, &__search
       &--mobile
         &_hidden
@@ -155,6 +154,11 @@
       padding-top: 30px
       &--visible
         display: block
+        overflow-x: hidden
+        overflow-y: scroll
+        white-space: nowrap 
+
+
     &-menu
       flex-direction: column  
       &__item
@@ -266,6 +270,14 @@
       width: 100%
     &__message
       width: 100%
+@media (max-width: 767px)
+//@media (max-width: 767px) and (orientation:landscape)
+  .navbar
+    &-bottom
+      &--visible
+        overflow-x: hidden
+        overflow-y: scroll
+        white-space: nowrap 
 
 @media (max-width: 480px)
   
@@ -334,10 +346,14 @@
     &__bottom-text
       grid-row: 8
       grid-column: 1 
+      justify-content: flex-start
+      align-items: flex-end
+      align-content: flex-end
     &__policy  
-      flex-basis: 100% 
+
     &__bottom-img
       justify-content: flex-start
+    
 
 
       

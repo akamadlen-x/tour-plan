@@ -1665,9 +1665,6 @@ img {
   }
   body {
     padding-top: 78px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    white-space: nowrap;
   }
   .navbar--mobile_fixed {
     height: 78px;
@@ -1861,6 +1858,14 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .navbar-bottom--visible {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 480px) {
   .logo {
     width: 100px;
@@ -1962,10 +1967,14 @@ img {
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
-  }
-  .footer__policy {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
   }
   .footer__bottom-img {
     -webkit-box-pack: start;
