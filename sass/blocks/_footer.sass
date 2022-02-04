@@ -31,7 +31,7 @@
       grid-column: span 2 
     &-form
       grid-column: span 2  
-      margin-bottom: 102px  
+      margin-bottom: 62px  
 
   &__form
     display: flex
@@ -82,20 +82,43 @@
     height: 123px
     flex-basis: 100%
     margin-bottom: 23px
+  
+  &__bottom
+    &-wrap
+      grid-row: 5
+      grid-column: 1 / 5
+      display: flex
+    &-blank 
+      width: 20%
+    &-text
+      width: 60%
+   
+    &-list
+      display: flex
+      justify-content: center
+      min-width: 100px
+      padding: 0 
+      margin: 0
+      list-style: none
+    &-link
+      margin: 0
+      padding: 0
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      padding-right: 10px
+    &-img  
+      margin: 0
+      padding: 0
+      width: 20%
+      min-width: 136px
+      display: flex
+      justify-content: flex-end
 
-  &__bottom-text
-    display: flex
-    justify-content: center
-    grid-column: 2 / 4
-  &__policy
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    color: $light
-  &__bottom-img  
-    display: flex
-    justify-content: flex-end
+    
   &__img5
     width: 136px
     height: 22px 

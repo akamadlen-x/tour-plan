@@ -106,14 +106,23 @@
       &-form
         grid-row: 4  
         grid-column: span 5
+        margin-bottom: 0
     &__input
       flex-basis: 100%  
-    &-bottom
-      justify-content: space-between
-      &__text
-        padding-right: 0 
-    &__bottom-text
-      grid-column: 2 / 6     
+    &__bottom
+      &-wrap
+        flex-wrap: wrap
+        grid-column: 1 / 7    
+      &-blank
+        display: none
+      &-text
+        width: 100% 
+        margin-bottom: 10px
+      &-list  
+        justify-content: flex-start
+      &-img
+        justify-content: flex-start
+
 
 @media (max-width: 767px)
 
@@ -270,14 +279,7 @@
       width: 100%
     &__message
       width: 100%
-@media (max-width: 767px)
-//@media (max-width: 767px) and (orientation:landscape)
-  .navbar
-    &-bottom
-      &--visible
-        overflow-x: hidden
-        overflow-y: scroll
-        white-space: nowrap 
+
 
 @media (max-width: 480px)
   
@@ -343,16 +345,8 @@
     &__info
       flex-basis: 100%
       margin-bottom: 15px
-    &__bottom-text
-      grid-row: 8
-      grid-column: 1 
-      justify-content: flex-start
-      align-items: flex-end
-      align-content: flex-end
-    &__policy  
 
-    &__bottom-img
-      justify-content: flex-start
+   
     
 
 
