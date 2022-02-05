@@ -20,8 +20,6 @@
 
 
 @media ( max-width: 992px )
-  body
-    background-color: red
 
   .container, .newsletter-wrapper
     max-width: 700px
@@ -136,8 +134,7 @@
       padding: 9px
 
 @media (max-width: 767px)
-  body
-    background-color: green
+
 
   .container
     max-width: 576px
@@ -310,8 +307,7 @@
 
 
 @media (max-width: 480px)
-  body
-    background-color: yellow
+
   .logo
     width: 100px
   .hotel
@@ -374,6 +370,11 @@
     &__info
       flex-basis: 100%
       margin-bottom: 15px
+    &__bottom
+      &-wrap
+        flex-wrap: wrap
+        grid-row: 8
+        grid-column: 1 / 7    
 
   .modal
     &__title

@@ -1384,6 +1384,13 @@ form {
   margin-bottom: 23px;
 }
 
+.footer__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .footer__bottom-wrap {
   -ms-grid-row: 5;
   grid-row: 5;
@@ -1566,9 +1573,6 @@ form {
 }
 
 @media (max-width: 992px) {
-  body {
-    background-color: red;
-  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -1728,9 +1732,6 @@ form {
 }
 
 @media (max-width: 767px) {
-  body {
-    background-color: green;
-  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -1949,9 +1950,6 @@ form {
 }
 
 @media (max-width: 480px) {
-  body {
-    background-color: yellow;
-  }
   .logo {
     width: 100px;
   }
@@ -2046,6 +2044,15 @@ form {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 15px;
+  }
+  .footer__bottom-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-grid-row: 8;
+    grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
   }
   .modal__title {
     font-size: 12px;
