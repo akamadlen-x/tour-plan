@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -135,7 +136,7 @@
               Stays Free
             </p>
           </div>
-          <div class="rating hotel-info__rating">
+          <div class="rating hotel-info__rating" data-aos="fade-left">
             <span class="rating__text">User rating</span>
             <span class="rating__counter">4.5/</span
             ><span class="rating__fraction">5</span>
@@ -314,7 +315,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
+                <div class="reviews-slider__profile" data-aos="zoom-in">
                   <img
                     src="img/reviews-avatar.jpg"
                     alt="photo Megan Fox"
@@ -330,7 +331,12 @@
                     <img src="img/Star.svg" alt="star" />
                   </div>
                 </div>
-                <p class="reviews-slider__text">
+                <p
+                  class="reviews-slider__text"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                >
                   It was very nice hotel with cleanliness. Staff behavior was
                   good and polite. They welcome us very well. Issue was only
                   that Lift was not in working and we were allotted to 3rd floor
@@ -348,10 +354,10 @@
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
-                <div class="reviews-slider__profile">
+                <div class="reviews-slider__profile" data-aos="zoom-in">
                   <img
                     src="img/reviews-avatar-2.jpg"
-                    alt="photo Megan Fox"
+                    alt="photo Madona"
                     class="reviews-slider__avatar"
                   />
                   <h3 class="reviews-slider__username">
@@ -367,7 +373,12 @@
                     <img src="img/Star.svg" alt="star" />
                   </div>
                 </div>
-                <p class="reviews-slider__text">
+                <p
+                  class="reviews-slider__text"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="3000"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
                   praesentium unde veritatis tenetur eveniet a culpa corrupti
                   aspernatur eum hic eos repellendus, distinctio harum quam
@@ -377,11 +388,6 @@
                   inventore iste fugit animi ex Lorem ipsum dolor sit amet
                   consectetur adipisicing elit. Non dignissimos asperiores
                   inventore eaque. Dolorum fuga voluptatem corrupti quaerat.
-                  Debitis sapiente consequuntur, iste eligendi deserunt
-                  laudantium hic minima natus! Itaque consectetur alias
-                  molestias ipsam ex. Porro soluta esse qui rem, incidunt
-                  blanditiis recusandae ipsum id, repellendus nulla, pariatur
-                  iure totam dolores.
                 </p>
               </div>
 
@@ -667,6 +673,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
