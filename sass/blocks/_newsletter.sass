@@ -42,16 +42,21 @@
   overflow: hidden
 
   &__input
-    position: absolute
+    border: none
     width: 100%
     height: 100%
-    border: none
     padding-left: 33px
     padding-right: 75px
     font-style: normal
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    z-index: -1
+    &-out
+      width: 100%
+      height: 100%
+      z-index: 1
+
   &__button
     position: absolute
     width: 65px
@@ -61,6 +66,7 @@
     border: none  
     background-color: $primary
     color: $light
+    z-index: 2
     
 
 

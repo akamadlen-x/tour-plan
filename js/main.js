@@ -59,4 +59,27 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Валидация форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Write your name",
+          minlength: "Minimum lenght 2 sign",
+        },
+        email: {
+          required: "We need your email address",
+          email: "Emai format: name@domain.com",
+        },
+        phone: {
+          required: "Phone required",
+        },
+      },
+    });
+  });
+
+  jQuery(function ($) {
+    $("input[type='phone_mask']").mask("+7(999) 999-9999");
+  });
 });
