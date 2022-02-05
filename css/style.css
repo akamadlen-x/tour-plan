@@ -1481,7 +1481,8 @@ form {
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 478px;
+  width: 478px;
+  height: 486px;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1519,8 +1520,9 @@ form {
 }
 
 .modal__input {
-  width: 100%;
   margin-bottom: 15px;
+  width: 302px;
+  height: 50px;
 }
 
 .modal__message {
@@ -1564,6 +1566,9 @@ form {
 }
 
 @media (max-width: 992px) {
+  body {
+    background-color: red;
+  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -1710,9 +1715,22 @@ form {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .modal__dialog {
+    max-width: 460px;
+    min-width: 410px;
+    padding: 33px 83px;
+  }
+  .modal__button {
+    min-width: 140px;
+    min-height: 50px;
+    padding: 9px;
+  }
 }
 
 @media (max-width: 767px) {
+  body {
+    background-color: green;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -1913,31 +1931,27 @@ form {
   .footer__message {
     width: 100%;
   }
-}
-
-.modal__title {
-  font-size: 14px;
-}
-
-.modal__dialog {
-  max-width: 378px;
-  padding: 23px 58px;
-}
-
-.modal__input {
-  padding: 0 15px;
-  max-height: 30px;
-}
-
-.modal__message {
-  min-height: 50px;
-}
-
-.modal__button {
-  margin-bottom: 8px;
+  .modal__title {
+    font-size: 14px;
+  }
+  .modal__dialog {
+    max-width: 400px;
+    min-width: 370px;
+    padding: 30px 60px;
+  }
+  .modal__input {
+    padding: 0 15px;
+    height: 45px;
+  }
+  .modal__message {
+    min-height: 100px;
+  }
 }
 
 @media (max-width: 480px) {
+  body {
+    background-color: yellow;
+  }
   .logo {
     width: 100px;
   }
@@ -2032,6 +2046,24 @@ form {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 15px;
+  }
+  .modal__title {
+    font-size: 12px;
+  }
+  .modal__dialog {
+    max-width: 370px;
+    min-width: 330px;
+    padding: 25px 50px;
+  }
+  .modal__input {
+    padding: 0 10px;
+    height: 40px;
+  }
+  .modal__message {
+    min-height: 90px;
+  }
+  .modal__info {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

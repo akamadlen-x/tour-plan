@@ -20,6 +20,8 @@
 
 
 @media ( max-width: 992px )
+  body
+    background-color: red
 
   .container, .newsletter-wrapper
     max-width: 700px
@@ -123,8 +125,19 @@
       &-img
         justify-content: flex-start
 
+  .modal
+    &__dialog
+      max-width: 460px
+      min-width: 410px
+      padding: 33px 83px
+    &__button
+      min-width: 140px
+      min-height: 50px
+      padding: 9px
 
 @media (max-width: 767px)
+  body
+    background-color: green
 
   .container
     max-width: 576px
@@ -280,22 +293,25 @@
     &__message
       width: 100%
 
-.modal
-  &__title
-    font-size: 14px
-  &__dialog
-    max-width: 378px
-    padding: 23px 58px      
-  &__input
-    padding: 0 15px
-    max-height: 30px 
-  &__message  
-    min-height: 50px
-  &__button
-    margin-bottom: 8px  
+  .modal
+    &__title
+      font-size: 14px
+    &__dialog
+      max-width: 400px
+      min-width: 370px
+      
+      padding: 30px 60px
+
+    &__input
+      padding: 0 15px
+      height: 45px 
+    &__message  
+      min-height: 100px
+
 
 @media (max-width: 480px)
-  
+  body
+    background-color: yellow
   .logo
     width: 100px
   .hotel
@@ -358,6 +374,24 @@
     &__info
       flex-basis: 100%
       margin-bottom: 15px
+
+  .modal
+    &__title
+      font-size: 12px
+    &__dialog
+      max-width: 370px
+      min-width: 330px
+      
+      padding: 25px 50px
+
+    &__input
+      padding: 0 10px
+      height: 40px 
+    &__message  
+      min-height: 90px
+
+    &__info
+      margin-bottom: 10px         
 
    
     
