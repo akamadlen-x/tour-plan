@@ -289,7 +289,8 @@
         <form
           action="#"
           method="post"
-          class="subscribe newsletter__subscribe form"
+          class="subscribe form newsletter__subscribe"
+          novalidate="novalidate"
         >
           <div class="subscribe__input-out">
             <input
@@ -298,6 +299,7 @@
               placeholder="Your email address"
               name="email"
               required
+              aria-invalid="true"
             />
           </div>
           <button class="subscribe__button" type="submit">Send</button>
@@ -501,13 +503,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://facebook.com/" class="footer__link" target="_blank"
                 ><img src="img/fb.svg" alt="icon:FB"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link"  target="_blank"
                 ><img src="img/yt.svg" alt="icon:Yuotube"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com/" class="footer__link"  target="_blank"
                 ><img src="img/inst.svg" alt="icon:Inst"
               /></a>
             </div>
@@ -555,10 +557,22 @@
                     alt="icon: phone"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday:52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="tel__link">
+                  <a class="footer__link" href="tel:2691500"
+                    >Tel (business hours) : 269 1500</a
+                  > <br>
+               
+
+                <div class="tel__link">
+                  <a class="footer__link" href="tel:52566138"
+                    >Tel (hotline) Monday - Saturday:52-56-61-38 (08:00 am –
+                    20:00 pm)</a
+                  > <br>
+                
+                  <a class="footer__link" href="tel:52566138"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -568,7 +582,9 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a class="footer__link" href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -588,10 +604,12 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input modal__musk"
+                  id="tt"
+                  class="input footer__input"
                   placeholder="Phone Number"
                   name="phone"
                   required
+                  minlength="2"
                 />
               </div>
 
@@ -646,11 +664,13 @@
             minlength="2"
           />
           <input
-            type="tel"
-            class="input modal__input modal__musk"
+            type="text"
+            class="input modal__input"
+            id="tt"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="2"
           />
           <input
             type="text"
