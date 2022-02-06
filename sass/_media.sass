@@ -108,9 +108,12 @@
         grid-row: 4  
         grid-column: span 5
         margin-bottom: 0
-    &__input
-      &-group      
-        flex-basis: 100%  
+    &__input  
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        flex-basis: 48%        
+
     &__bottom
       &-wrap
         flex-wrap: wrap
@@ -284,10 +287,12 @@
       &-form
         grid-row: 4
         grid-column: span 5     
+    &__input  
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        flex-basis: 48%
 
-    &__input
-      &-group     
-        width: 100%
     &__message
       width: 100%
 
@@ -347,10 +352,10 @@
     &__contact
       &-details
         grid-row: 6
-        grid-column: 1 / 7
+        grid-column: 1
       &-form
         grid-row: 7
-        grid-column: 1 / 7  
+        grid-column: 1 
         margin-bottom: 15px    
     &__additional    
       grid-row: 3
@@ -360,7 +365,7 @@
       grid-column: 1
     &__legal
       grid-row: 5
-      grid-column: 1
+      grid-column: span 1
     &__input
       &-group
         flex-basis: 100% 
@@ -376,7 +381,7 @@
       &-wrap
         flex-wrap: wrap
         grid-row: 8
-        grid-column: 1 / 7    
+        grid-column: span 1   
 
   .modal
     &__title
