@@ -80,7 +80,7 @@ $(document).ready(function () {
   });
 
   jQuery(function ($) {
-    $("input[type='phone_mask']").mask("+7(999) 999-9999");
+    $("input[type='tel").mask("+7(999) 999-9999");
   });
   AOS.init();
 });
