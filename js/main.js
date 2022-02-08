@@ -74,14 +74,14 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone required",
-          minlength: "Minimum lenght 2 sign",
+          minlength: "You must enter 11 digit",
         },
       },
     });
   });
 
   jQuery(function ($) {
-    $("#tt").mask("+79999999999");
+    $("input[type='tel']").mask("+7(999) 999-9999");
   });
   AOS.init();
 });
