@@ -116,6 +116,7 @@
         </ol>
       </div>
     </nav>
+   
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
@@ -287,14 +288,14 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
-          action="#"
+          action="send.php"
           method="post"
           class="subscribe form newsletter__subscribe"
           novalidate="novalidate"
         >
           <div class="subscribe__input-out">
             <input
-              type="text"
+              type="email"
               class="subscribe__input"
               placeholder="Your email address"
               name="email"
@@ -558,20 +559,23 @@
                   />
                 </div>
                 <div class="tel__link">
+                  <span>Tel (business hours) : </span>
                   <a class="footer__link" href="tel:2691500"
-                    >Tel (business hours) : 269 1500</a
+                    >269 1500</a
                   > <br>
                
 
                 <div class="tel__link">
+                  <span>Tel (hotline) Monday - Saturday:</span>
                   <a class="footer__link" href="tel:52566138"
-                    >Tel (hotline) Monday - Saturday:52-56-61-38 (08:00 am –
-                    20:00 pm)</a
-                  > <br>
-                
+                    >52-56-61-38</a> 
+                  <span> (08:00 am –
+                    20:00 pm)</span>  <br>
+                  <span>Tel (hotline) Sunday: </span>
                   <a class="footer__link" href="tel:52566138"
-                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                    >52-56-61-38</a
                   >
+                  <span> (08:00 am – 14:00 pm)</span>
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
@@ -588,10 +592,11 @@
               </li>
             </ul>
           </div>
+
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-3" >Send us a message</h3>
             <form action="send.php" method="post" class="footer__form form">
-              <div class="footer__input-group">
+              <div id="input-name" class="footer__input-group" >
                 <input
                   type="text"
                   class="input footer__input"
@@ -601,11 +606,11 @@
                   minlength="2"
                 />
               </div>
-              <div class="footer__input-group">
+              <div class="footer__input-group" id="input-tel">
                 <input
                   type="tel"
                   id="tt"
-                  class="input footer__input"
+                  class="footer-tel input footer__input"
                   placeholder="Phone Number"
                   name="phone"
                   required
@@ -674,7 +679,7 @@
           />
              
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"

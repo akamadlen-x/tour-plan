@@ -5,19 +5,27 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$name = "";
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$email = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение BTP";
+if (empty($name)) {
+$body = "
+<h2>Подписка на новости</h2>
+<b>email:</b> $email
+";    
+} 
+else {
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
-";
+";} 
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -37,7 +45,8 @@ try {
     $mail->setFrom('aka7771@gmail.com', 'Lena Uvarova'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('akamadlen@gmail.com');  
+    $mail->addAddress('akamadlen@gmail.com');
+    
 
     // Прикрипление файлов к письму
     //сторонний код для отправки минуя ошибку

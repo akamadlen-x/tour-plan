@@ -43,8 +43,27 @@ $(document).ready(function () {
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
+  var footerButton = $(".footer__button");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  footerButton.on("click", changeTop);
+
+  function changeTop() {
+    var footerTel = $(".footer-tel");
+    var footerName = document.getElementById("input-name");
+    var footerTT = document.getElementById("input-tel");
+    var container1 = document.querySelector(".container");
+    if (
+      container1.clientWidth > 960 ||
+      (container1.clientWidth < 701 && container1.clientWidth > 423)
+    ) {
+      if (footerName.style.height != "50px")
+        document.getElementById("input-tel").style.height = 68 + "px";
+      console.log(footerTT.clientHeight);
+      if (footerTT.style.height != "50px")
+        document.getElementById("input-name").style.height = 68 + "px";
+    }
+  }
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
@@ -78,6 +97,19 @@ $(document).ready(function () {
         },
       },
     });
+  });
+
+  // Валидация формы email
+  $(".form").validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: true,
+        email: true,
+        required: "We need your email address",
+        email: "Emai format: name@domain.com",
+      },
+    },
   });
 
   jQuery(function ($) {
